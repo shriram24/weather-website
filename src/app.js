@@ -23,21 +23,21 @@ app.use(express.static(htmlpath))
 app.get('',(req, res)=>{
     res.render('index',{
         title: 'Weather',
-        name: 'Ram'
+        name: 'Shri Ram Rawat'
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title: 'About Me',
-        name:'Ram'
+        name:'Shri Ram Rawat'
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help!',
-        name:'Ram',
+        name:'Shri Ram Rawat',
         message:"What can i help you ?"
     })
 })
@@ -71,7 +71,7 @@ app.get('/weather',(req, res)=>{
 app.get('/help/*',(req,res)=>{
     res.render('404',{
         title:'404',
-        name:'ram',
+        name:'Shri Ram Rawat',
         errormessage:'Help article not found.'
     })
 })
@@ -79,7 +79,7 @@ app.get('/help/*',(req,res)=>{
 app.get('*',(req,res)=>{
     res.render('404',{
         title:'404',
-        name:'ram',
+        name:'Shri Ram Rawat',
         errormessage:'Page not found.'
     })
 })
